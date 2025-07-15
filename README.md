@@ -1,39 +1,39 @@
-# Credit Card Fraud Detection
+# creditcard_prevention
 
 ## Overview
 
-This project implements a machine learning pipeline to detect fraudulent credit card transactions. The model leverages transaction features—such as amount, time, and principal component analysis (PCA) transformed variables—to classify transactions as authentic or fraudulent. Addressing the challenge of severe class imbalance, the project applies advanced resampling and multiple classification algorithms to maximize fraud detection performance.
+This project implements a robust machine learning pipeline for detecting fraudulent credit card transactions. The solution leverages transaction features—including amount, time, and PCA-transformed variables—to classify transactions as authentic or fraudulent. To address the challenge of severe class imbalance, the project applies advanced resampling and multiple classification algorithms to maximize fraud detection performance.
 
 ## Features
 
-- **Exploratory Data Analysis (EDA):**  
-  Detailed analysis of transaction data to understand feature distributions, correlations, and class imbalance.
+- **Exploratory Data Analysis (EDA):**
+  - Detailed analysis of transaction data to understand feature distributions, correlations, and class imbalance.
 
-- **Imbalanced Data Handling:**  
-  Utilizes both undersampling and oversampling techniques (including SMOTE) to address the rarity of fraudulent transactions.
+- **Imbalanced Data Handling:**
+  - Utilizes both undersampling and oversampling techniques (including SMOTE) to address the rarity of fraudulent transactions.
 
-- **Feature Engineering & Scaling:**  
-  Applies PCA-transformed features and modified min-max normalization for optimal model performance.
+- **Feature Engineering & Scaling:**
+  - Applies PCA-transformed features and modified min-max normalization for optimal model performance.
 
-- **Modeling:**  
-  Compares several classifiers:
-  - Logistic Regression
-  - K-Nearest Neighbors
-  - Decision Tree
-  - Support Vector Machine (linear kernel)
-  - Naive Bayes
-  - Random Forest
-  - Linear Discriminant Analysis
-  - Stochastic Gradient Descent
-  - Ridge Classifier
+- **Modeling:**
+  - Compares several classifiers:
+    - Logistic Regression
+    - K-Nearest Neighbors
+    - Decision Tree
+    - Support Vector Machine (linear kernel)
+    - Naive Bayes
+    - Random Forest
+    - Linear Discriminant Analysis
+    - Stochastic Gradient Descent
+    - Ridge Classifier
 
-- **Evaluation Metrics:**  
-  Focuses on the $F_2$-score to prioritize recall (catching fraud) over precision, alongside accuracy, precision, recall, and ROC-AUC.
+- **Evaluation Metrics:**
+  - Focuses on the $F_2$-score to prioritize recall (catching fraud) over precision, alongside accuracy, precision, recall, and ROC-AUC.
 
 ## Results
 
 - The **Random Forest** classifier, trained on SMOTE-oversampled data, achieved the best test $F_2$-score of **0.880783**.
-- This result demonstrates strong performance in identifying fraudulent transactions with minimal false negatives.
+- This demonstrates strong performance in identifying fraudulent transactions with minimal false negatives.
 
 ## Usage
 
